@@ -1,4 +1,5 @@
 # include <iostream>
+# include <climits>
 
 
 using namespace std;
@@ -66,7 +67,20 @@ int main(){
             cout << a << " nao e divisivel por " << b << endl;
         }
     }
+    // 3.2 A: Peça ao usuário para fornecer um número inteiro, obtenha-o da
+    // entrada padrão, usando cin, e armazene numa variável de tipo int;
+    int n;
+    cout << "Digite um numero: ";
+    cin >> n;
 
+    // 3.2 B: Determine se o valor fornecido pode ser representado, sem perda de
+    // informação, como um short int. Imprima na tela o valor
+    // fornecido, seguido das palavras “e maior que um short int”
+    // ou “este valor pertence ao intervalo dos short
+    // int”. Use apenas o operador condicional (?).
+    
+    n > SHRT_MAX ? cout << "e maior que um short int" << endl :
+        cout << "este valor pertence ao intervalo dos short int" << endl;
 
     return 0;
 }
