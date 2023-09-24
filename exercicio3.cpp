@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+// exercicio da letra A à letra D
 
 int main(void){
     //Questão letra a  
@@ -26,19 +26,6 @@ int main(void){
     //Questão letra d 
     cout << c << " octal: " << oct << int(c) << endl; 
 
-    //Questão letra e 
-    c = a - b; 
-    // uso do absoluto utilizando logica
-    if (c < 0) {
-        c = -c; 
-    }
-    cout << "O valor : " << c << endl;
-
-
-    //Questão letra f
-    int num = abs(c);
-
-    cout << "O valor usando o abs(): " << num << endl;
 
     return 0;
 
